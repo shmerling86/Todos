@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12 mx-auto" style="max-width:40%">
+        <ul class="list-group list-group-flush" ng-repeat="task in tasks| filter : sortByStatus">
+            <li class="list-group-item" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+                <input type="checkbox" id="checkInput" ng-model="task.isCompleted" ng-change="leftTasksFunction()">
+                <span ng-class="{'Complete': task.isCompleted}">{{task.content}}</span>
+                <span ng-if="hoverEdit" class="float-right">
+                    <i class="fas fa-trash" ng-click="deleteTask($index, task.isCompleted)"></i>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+body{
+  background-color:#e9ecef;
+}
+
+i,button{
+  cursor: pointer;
+}
+
+ul{
+  font-size: 1.2rem;
+}
+
+.Complete{
+  color:#6c757d;
+  text-decoration: line-through;
+  }
+
+.dont-show{
+  visibility: hidden;
+}
+
+.delete{
+  display: none;
+}
